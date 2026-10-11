@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "SAIPRATAP SafeVision AI - Industrial Safety",
+  "short_name": "SAIPRATAP",
+  "description": "Real-time AI monitoring for PPE compliance, smoke, and fire detection across industrial CCTV feeds by SAIPRATAP.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "categories": ["utilities", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

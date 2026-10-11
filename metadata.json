@@ -1,0 +1,7 @@
+{
+  "name": "SafeVision AI",
+  "description": "Industrial AI safety monitoring platform for CCTV and video feeds. Detects PPE compliance (helmets, high-vis vests, footwear, gloves), smoke, and fire in real time with contextual alerts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

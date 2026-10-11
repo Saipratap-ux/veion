@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <!-- Squircle Dark Navy Background Gradient -->
+    <linearGradient id="spBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b3e" />
+      <stop offset="45%" stop-color="#081026" />
+      <stop offset="100%" stop-color="#040817" />
+    </linearGradient>
+
+    <!-- Golden Crown Gradient -->
+    <linearGradient id="spCrownGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#fef08a" />
+    </linearGradient>
+
+    <!-- Upper Golden/Orange S Wing Gradient -->
+    <linearGradient id="spUpperSGrad" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="25%" stop-color="#fbbf24" />
+      <stop offset="65%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Upper S Volumetric Shadow -->
+    <linearGradient id="spUpperSShade" x1="10%" y1="20%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#b45309" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#78350f" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Lower Azure/Royal Blue S Wing Gradient -->
+    <linearGradient id="spLowerSGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="40%" stop-color="#0284c7" />
+      <stop offset="75%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Lower S Inner Glow -->
+    <linearGradient id="spLowerSGlow" x1="10%" y1="10%" x2="80%" y2="80%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Orbital Swoosh Ring Gradient -->
+    <linearGradient id="spOrbitalGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="25%" stop-color="#f59e0b" />
+      <stop offset="75%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Ambient Glow Filter -->
+    <filter id="spGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#f59e0b" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Squircle App Icon Container -->
+  <rect width="512" height="512" rx="112" fill="url(#spBgGrad)" />
+  <rect width="508" height="508" x="2" y="2" rx="110" stroke="#1e2d5a" stroke-width="3" stroke-opacity="0.7" />
+
+  <!-- Outer subtle rim reflection -->
+  <path d="M60 140 C140 70 372 70 452 140" stroke="#ffffff" stroke-width="2" stroke-opacity="0.08" fill="none" />
+
+  <!-- 1. Royal Crown atop S -->
+  <g id="crown" filter="url(#spGlow)">
+    <path d="M205 130 L215 95 L238 116 L256 70 L274 116 L297 95 L307 130 C280 137 232 137 205 130 Z" fill="url(#spCrownGrad)" />
+    <circle cx="215" cy="93" r="6" fill="#fef08a" />
+    <circle cx="256" cy="68" r="8" fill="#fef08a" />
+    <circle cx="297" cy="93" r="6" fill="#fef08a" />
+    <path d="M210 128 C235 134 277 134 302 128" stroke="#fef08a" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- 2. Upper Golden S Wing -->
+  <g id="upper-s">
+    <path d="M345 152 C310 142 225 145 190 190 C160 228 178 280 230 290 L325 240 C325 240 310 200 255 192 C230 188 220 200 220 208 C220 216 232 224 250 226 L315 220 C340 195 348 165 345 152 Z" fill="url(#spUpperSGrad)" />
+    <path d="M190 190 C225 145 310 142 345 152 C348 165 340 195 315 220 L250 226 C232 224 220 216 220 208 C220 200 230 188 255 192 C310 200 325 240 325 240 L230 290 C178 280 160 228 190 190 Z" fill="url(#spUpperSShade)" />
+    <path d="M200 180 C240 148 305 148 340 155" stroke="#fff" stroke-width="3" stroke-opacity="0.6" stroke-linecap="round" />
+  </g>
+
+  <!-- 3. Dynamic Orbital Swoosh Ring -->
+  <g id="orbital-ring">
+    <path d="M138 318 C180 292 270 248 375 208 C320 230 230 274 152 308 C145 311 140 315 138 318 Z" fill="url(#spOrbitalGrad)" />
+    <path d="M152 308 C220 278 300 238 375 208 C330 226 250 268 180 296 Z" fill="#fde047" opacity="0.8" />
+  </g>
+
+  <!-- 4. Lower Azure / Royal Blue S Wing -->
+  <g id="lower-s">
+    <path d="M165 342 C185 365 240 382 305 358 C350 342 365 285 310 245 L260 262 C295 288 285 325 250 332 C215 340 190 320 190 300 C190 285 205 272 230 260 L185 272 C165 292 155 320 165 342 Z" fill="url(#spLowerSGrad)" />
+    <path d="M165 342 C185 365 240 382 305 358 C350 342 365 285 310 245 L260 262 C295 288 285 325 250 332 C215 340 190 320 190 300 C190 285 205 272 230 260 L185 272 C165 292 155 320 165 342 Z" fill="url(#spLowerSGlow)" />
+    <path d="M195 352 C240 372 290 365 320 345" stroke="#7dd3fc" stroke-width="3.5" stroke-opacity="0.7" stroke-linecap="round" />
+  </g>
+
+  <!-- SAIPRATAP Typography -->
+  <g transform="translate(68, 412)">
+    <!-- SAI in Gold -->
+    <text x="0" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="52" fill="#fbbf24" letter-spacing="-1">SAI</text>
+    <!-- PRATAP in White -->
+    <text x="96" y="38" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="52" fill="#ffffff" letter-spacing="-1">PRATAP</text>
+  </g>
+</svg>
